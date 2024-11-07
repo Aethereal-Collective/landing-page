@@ -8,11 +8,11 @@ WORKDIR /app
 COPY package*.json /app
 
 # You might want to use yarn or pnpm instead
-RUN npm install
+RUN yarn install
 
 COPY . /app
 
-RUN npm run build
+RUN yarn run build
 
 # Instead of using a node:18-alpine image, we are using a distroless image. These are provided by google: https://github.com/GoogleContainerTools/distroless
 FROM node:18-alpine as prod

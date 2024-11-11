@@ -4,12 +4,12 @@ useSeoMeta({
 	ogTitle: "æthereal",
 	description: "æthereal an unique crypto collective since '21, based in Indonesia.",
 	ogDescription: "æthereal an unique crypto collective since '21, based in Indonesia.",
-	ogImage: "/logo.png",
+	ogImage: "/logo.jpg",
 	twitterCard: "summary_large_image",
 	ogimageAlt: "æthereal",
 	ogImageWidth: "226",
 	ogImageHeight: "226",
-	twitterImage: "/logo.png",
+	twitterImage: "/logo.jpg",
 });
 </script>
 

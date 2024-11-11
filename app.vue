@@ -4,12 +4,12 @@ useSeoMeta({
 	ogTitle: "æthereal",
 	description: "æthereal an unique crypto collective since '21, based in Indonesia.",
 	ogDescription: "æthereal an unique crypto collective since '21, based in Indonesia.",
-	ogImage: "https://ogcdn.net/e4b8c678-7bd5-445d-ba03-bfaad510c686/v4/aethereal.my.id/%C3%A6thereal/https%3A%2F%2Faethereal.my.id%2Flogo.jpg/og.png",
+	ogImage: "https://ogcdn.net/6064b869-74ed-4eb9-b76c-0b701ffe7e6b/v4/aethereal.my.id/%C3%A6thereal/https%3A%2F%2Faethereal.my.id%2Flogo.jpg/og.png",
 	twitterCard: "summary_large_image",
 	ogimageAlt: "æthereal",
 	ogImageWidth: "226",
 	ogImageHeight: "226",
-	twitterImage: "https://ogcdn.net/e4b8c678-7bd5-445d-ba03-bfaad510c686/v4/aethereal.my.id/%C3%A6thereal/https%3A%2F%2Faethereal.my.id%2Flogo.jpg/og.png",
+	twitterImage: "https://ogcdn.net/6064b869-74ed-4eb9-b76c-0b701ffe7e6b/v4/aethereal.my.id/%C3%A6thereal/https%3A%2F%2Faethereal.my.id%2Flogo.jpg/og.png",
 });
 </script>
 

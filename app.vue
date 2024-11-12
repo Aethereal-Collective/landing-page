@@ -11,10 +11,20 @@ useSeoMeta({
 	ogImageHeight: "226",
 	twitterImage: "https://ogcdn.net/6064b869-74ed-4eb9-b76c-0b701ffe7e6b/v4/aethereal.my.id/%C3%A6thereal/https%3A%2F%2Faethereal.my.id%2Flogo.jpg/og.png",
 });
+
+useHead({
+	script: [
+		{
+			src: "https://platform.twitter.com/widgets.js",
+			async: true,
+			type: "text/javascript",
+		},
+	],
+});
 </script>
 
 <template>
-	<Html lang="id" class="dark">
+	<Html lang="en" class="dark">
 		<div>
 			<NuxtLayout>
 				<NuxtLoadingIndicator color="#B68A62" />

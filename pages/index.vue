@@ -8,6 +8,10 @@
 		</ClientOnly>
 
 		<PagesSectionNode />
+
+		<ClientOnly>
+			<PagesSectionCollab />
+		</ClientOnly>
 	</div>
 </template>
 

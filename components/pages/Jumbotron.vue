@@ -25,6 +25,8 @@
 
 <script setup lang="ts">
 import { particleOptions } from "~/lib/particle";
+
+// @ts-ignore
 import { PowerGlitch } from "powerglitch";
 
 const { $anime } = useNuxtApp();

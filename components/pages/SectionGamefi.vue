@@ -2,7 +2,7 @@
 	<section id="gamefi" class="w-full flex flex-col items-center justify-center gap-10 px-10 py-40">
 		<h2 class="text-center text-xl xl:text-3xl opacity-80 capitalize font-medium">Empowering GameFi Through Community</h2>
 
-		<div class="gamefi__slider w-[70%] xl:w-[60%] relative">
+		<div class="gamefi__slider w-[80%] xl:w-[60%] relative">
 			<!-- First Carousel (Images 1-5) -->
 			<Carousel
 				class="relative w-full"

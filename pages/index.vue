@@ -6,6 +6,8 @@
 		<ClientOnly>
 			<PagesSectionGamefi />
 		</ClientOnly>
+
+		<PagesSectionNode />
 	</div>
 </template>
 

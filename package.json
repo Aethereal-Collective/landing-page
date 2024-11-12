@@ -15,8 +15,12 @@
     "@nuxt/icon": "^1.7.2",
     "@nuxtjs/color-mode": "^3.5.2",
     "@nuxtjs/tailwindcss": "^6.12.2",
+    "@vueuse/core": "^11.2.0",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
+    "embla-carousel-auto-scroll": "^8.3.1",
+    "embla-carousel-autoplay": "^8.3.1",
+    "embla-carousel-vue": "^8.3.1",
     "lucide-vue-next": "^0.454.0",
     "nuxt": "^3.14.159",
     "powerglitch": "^2.3.4",
@@ -28,6 +32,7 @@
     "vue-router": "latest"
   },
   "devDependencies": {
+    "nuxt-aos": "^1.2.5",
     "nuxt-particles": "^0.3.0",
     "typescript": "^5.6.3"
   }

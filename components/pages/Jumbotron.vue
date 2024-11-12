@@ -15,7 +15,7 @@
 		</div>
 
 		<div class="absolute bottom-0 left-0 right-0 mb-10 flex justify-center items-center">
-			<NuxtLink to="/about" class="italic opacity-45 flex flex-col justify-center items-center gap-y-5 text-xs sm:text-sm">
+			<NuxtLink to="#intro" class="italic opacity-45 flex flex-col justify-center items-center gap-y-5 text-xs sm:text-sm">
 				<span class="scroll"> See more our movement </span>
 				<Icon name="ph:mouse-scroll-thin" class="animate-bounce text-xl" />
 			</NuxtLink>

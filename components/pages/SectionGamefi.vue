@@ -81,7 +81,7 @@ const secondCarouselImages = computed(() => {
 });
 
 const onClickExplore = () => {
-	navigateTo("https://discord.gg/aetherealco", {
+	navigateTo("https://discord.gg/aethereal", {
 		open: {
 			target: "_blank",
 		},

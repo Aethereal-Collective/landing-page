@@ -6,7 +6,7 @@
 			<div class="grid grid-cols-4 gap-x-10 gap-y-20 justify-items-center">
 				<!-- Looping through each image to display it in a grid -->
 				<div v-for="(image, index) in nodeImage" :key="index" class="flex items-center justify-center">
-					<img :src="image" alt="" class="w-20 sm:w-32" />
+					<img :src="image" alt="" class="w-20 sm:w-32 rounded-full object-cover" />
 				</div>
 			</div>
 

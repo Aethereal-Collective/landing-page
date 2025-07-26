@@ -10,6 +10,10 @@
 
 		<PagesSectionNode />
 
+		<ClientOnly>
+			<PagesSectionGithub />
+		</ClientOnly>
+
 		<PagesFooter />
 	</div>
 </template>

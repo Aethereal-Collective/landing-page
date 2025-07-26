@@ -1,5 +1,5 @@
 <template>
-	<section id="node" class="w-full flex flex-col items-center justify-center py-40 gap-20">
+	<section id="node" class="w-full flex flex-col items-center justify-center py-20 md:py-40 gap-20">
 		<h2 class="text-center text-xl xl:text-3xl opacity-80 capitalize font-medium">Powering the Network with Trusted Node Operations</h2>
 
 		<div class="w-full sm:w-[50%] relative px-5 sm:px-0">

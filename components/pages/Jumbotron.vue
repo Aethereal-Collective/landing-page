@@ -1,6 +1,6 @@
 <template>
 	<section id="jumbotron" class="w-full h-screen relative flex justify-center items-center">
-		<NuxtParticles id="tsparticles" :options="(particleOptions as any)"></NuxtParticles>
+		<div id="tsparticles"></div>
 
 		<div class="jumbotron__text flex flex-col gap-5">
 			<h2 class="text-2xl sm:text-3xl md:text-5xl text-center opacity-50">Join the Movement</h2>
@@ -25,22 +25,21 @@
 
 <script setup lang="ts">
 import { particleOptions } from "~/lib/particle";
+import { loadFull } from "tsparticles";
+import { tsParticles } from "@tsparticles/engine";
 
 // @ts-ignore
 import { PowerGlitch } from "powerglitch";
 
 const { $anime } = useNuxtApp();
 
-// Define words for animation
 const words = ["Learn", "Build", "Grow"];
 const currentIndex = ref(0);
 const currentWord = ref(words[currentIndex.value]);
 
-// Function to handle the text animation
 const animateWord = () => {
 	const wordElement = document.querySelector(".animated-word");
 
-	// Slide-out animation
 	$anime({
 		targets: wordElement,
 		translateY: [0, 50],
@@ -48,11 +47,9 @@ const animateWord = () => {
 		duration: 500,
 		easing: "easeInOutQuad",
 		complete: () => {
-			// Update word index
 			currentIndex.value = (currentIndex.value + 1) % words.length;
 			currentWord.value = words[currentIndex.value];
 
-			// Slide-in animation
 			$anime({
 				targets: wordElement,
 				translateY: [-50, 0],
@@ -64,17 +61,22 @@ const animateWord = () => {
 	});
 };
 
-// Run animation on mounted and repeat every 2 seconds
-onMounted(() => {
+onMounted(async () => {
 	animateWord();
 	setInterval(animateWord, 5000);
 
-	// Initialize PowerGlitch
 	PowerGlitch.glitch(".scroll", {
 		timing: {
 			duration: 5000,
 		},
 	});
+
+	await tsParticles.load({
+		id: "tsparticles",
+		options: particleOptions as any,
+	});
+
+	await loadFull(tsParticles);
 });
 </script>
 
@@ -87,6 +89,6 @@ onMounted(() => {
 	right: 0;
 	padding: 0;
 	margin: 0;
-	z-index: 0; /* if you use -1 you have to set to `"window"` the interactivity.detectsOn property */
+	z-index: 0;
 }
 </style>

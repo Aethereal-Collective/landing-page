@@ -1,6 +1,9 @@
 <template>
 	<div>
-		<PagesJumbotron />
+		<ClientOnly>
+			<PagesJumbotron />
+		</ClientOnly>
+
 		<PagesSectionIntroduction />
 
 		<ClientOnly>

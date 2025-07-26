@@ -1,8 +1,6 @@
 <template>
 	<div>
-		<ClientOnly>
-			<PagesJumbotron />
-		</ClientOnly>
+		<PagesJumbotron />
 
 		<PagesSectionIntroduction />
 
@@ -12,9 +10,7 @@
 
 		<PagesSectionNode />
 
-		<ClientOnly>
-			<PagesSectionCollab />
-		</ClientOnly>
+		<PagesFooter />
 	</div>
 </template>
 

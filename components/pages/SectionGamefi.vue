@@ -14,9 +14,9 @@
 				:plugins="[AutoScroll({ speed: 1 })]"
 			>
 				<CarouselContent>
-					<CarouselItem v-for="(data, index) in firstCarouselImages" :key="index" class="md:basis-1/3 lg:basis-1/4 xl:basis-1/5 2xl:basis-1/6">
+					<CarouselItem v-for="(data, index) in firstCarouselImages" :key="index" class="basis-10/12 md:basis-1/3 lg:basis-1/4 xl:basis-1/5 2xl:basis-1/6">
 						<div class="p-1">
-							<Card>
+							<Card class="border-none">
 								<CardContent class="flex flex-row-reverse aspect-square items-center justify-center p-6">
 									<img :src="data" alt="" />
 								</CardContent>
@@ -41,9 +41,9 @@
 				:plugins="[AutoScroll({ speed: 1 })]"
 			>
 				<CarouselContent>
-					<CarouselItem v-for="(data, index) in secondCarouselImages" :key="index" class="md:basis-1/3 lg:basis-1/4 xl:basis-1/5 2xl:basis-1/6">
+					<CarouselItem v-for="(data, index) in secondCarouselImages" :key="index" class="basis-10/12 md:basis-1/3 lg:basis-1/4 xl:basis-1/5 2xl:basis-1/6">
 						<div class="p-1">
-							<Card>
+							<Card class="border-none">
 								<CardContent class="flex flex-row-reverse aspect-square items-center justify-center p-6">
 									<img :src="data" alt="" />
 								</CardContent>

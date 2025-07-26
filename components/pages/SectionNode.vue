@@ -1,13 +1,10 @@
 <template>
 	<section id="node" class="w-full flex flex-col items-center justify-center py-40 gap-20">
-		<h2 class="text-center text-xl xl:text-3xl opacity-80 capitalize font-medium">Strengthening the Network with Reliable Node Operations</h2>
+		<h2 class="text-center text-xl xl:text-3xl opacity-80 capitalize font-medium">Powering the Network with Trusted Node Operations</h2>
 
-		<div class="w-[90%] sm:w-[50%] relative px-5 sm:px-0">
-			<div class="grid grid-cols-4 gap-x-10 gap-y-20 justify-items-center">
-				<!-- Looping through each image to display it in a grid -->
-				<div v-for="(image, index) in nodeImage" :key="index" class="flex items-center justify-center">
-					<img :src="image" alt="" class="w-20 sm:w-32 rounded-full object-cover" />
-				</div>
+		<div class="w-full sm:w-[50%] relative px-5 sm:px-0">
+			<div class="flex items-center justify-center">
+				<PhotoGallery :items="nodeImage" />
 			</div>
 
 			<!-- Overlay text with gradient background -->
@@ -19,10 +16,10 @@
 </template>
 
 <script setup lang="ts">
-const nodeImage = ["/image/node/chasm.png", "/image/node/dusk.png", "/image/node/elixir.png", "/image/node/gaga.png", "/image/node/icn.png", "/image/node/nillion.png", "/image/node/rainbow.png", "/image/node/rivalz.png", "/image/node/spheron.png", "/image/node/dill.png", "/image/node/ritual.png", "/image/node/kopi.png"];
+const nodeImage = [{ src: "/image/node/chasm.png" }, { src: "/image/node/dusk.png" }, { src: "/image/node/icn.png" }, { src: "/image/node/nillion.png" }, { src: "/image/node/rainbow.png" }, { src: "/image/node/spheron.png" }, { src: "/image/node/dill.png" }, { src: "/image/node/kopi.png" }];
 
 const onClickExplore = () => {
-	navigateTo("https://validator.aethereal.my.id/", {
+	navigateTo("https://validator.aethereal.top", {
 		open: {
 			target: "_blank",
 		},

@@ -5653,6 +5653,28 @@ __metadata:
   languageName: node
   linkType: hard
 
+"framer-motion@npm:12.22.0":
+  version: 12.22.0
+  resolution: "framer-motion@npm:12.22.0"
+  dependencies:
+    motion-dom: "npm:^12.22.0"
+    motion-utils: "npm:^12.19.0"
+    tslib: "npm:^2.4.0"
+  peerDependencies:
+    "@emotion/is-prop-valid": "*"
+    react: ^18.0.0 || ^19.0.0
+    react-dom: ^18.0.0 || ^19.0.0
+  peerDependenciesMeta:
+    "@emotion/is-prop-valid":
+      optional: true
+    react:
+      optional: true
+    react-dom:
+      optional: true
+  checksum: 10c0/44de4b8d21e947ecdb6a98a6167e5205996aa735f7a14967b5b54e9f33210f035754dd4414e003da5ec19d79abdf66f45d5c1bb980889390851d639942a68532
+  languageName: node
+  linkType: hard
+
 "fresh@npm:^2.0.0":
   version: 2.0.0
   resolution: "fresh@npm:2.0.0"
@@ -5938,6 +5960,13 @@ __metadata:
   dependencies:
     function-bind: "npm:^1.1.2"
   checksum: 10c0/3769d434703b8ac66b209a4cca0737519925bbdb61dd887f93a16372b14694c63ff4e797686d87c90f08168e81082248b9b028bad60d4da9e0d1148766f56eb9
+  languageName: node
+  linkType: hard
+
+"hey-listen@npm:^1.0.8":
+  version: 1.0.8
+  resolution: "hey-listen@npm:1.0.8"
+  checksum: 10c0/38db3028b4756f3d536c0f6a92da53bad577ab649b06dddfd0a4d953f9a46bbc6a7f693c8c5b466a538d6d23dbc469260c848427f0de14198a2bbecbac37b39e
   languageName: node
   linkType: hard
 
@@ -7083,6 +7112,45 @@ __metadata:
   languageName: node
   linkType: hard
 
+"motion-dom@npm:12.22.0":
+  version: 12.22.0
+  resolution: "motion-dom@npm:12.22.0"
+  dependencies:
+    motion-utils: "npm:^12.19.0"
+  checksum: 10c0/f3ef3a2f9224e6aba81535833c8e396e632c80ca5c919890243113b91c1fd388073c04f3163be64bc72594cebb65a2161bca104c90846504ff771dee979ff9d7
+  languageName: node
+  linkType: hard
+
+"motion-dom@npm:^12.22.0":
+  version: 12.23.9
+  resolution: "motion-dom@npm:12.23.9"
+  dependencies:
+    motion-utils: "npm:^12.23.6"
+  checksum: 10c0/a1d50490622eed75ef32d4fab1b97cbf45537fdfe37b6dcae8b5ca423de63a377a261552cb7527f5b70397e8b672df09342a4cae032e7fe6c4516c6c1d982043
+  languageName: node
+  linkType: hard
+
+"motion-utils@npm:^12.19.0, motion-utils@npm:^12.23.6":
+  version: 12.23.6
+  resolution: "motion-utils@npm:12.23.6"
+  checksum: 10c0/c058e8ba6423b3baa63e985bcc669877ee7d9579d938f5348b4e60c5ea1b4b33dd7f4877434436a4a5807f3cf00370d3fd4079a6fdd6309c5c87aa62b311a897
+  languageName: node
+  linkType: hard
+
+"motion-v@npm:^1.6.1":
+  version: 1.6.1
+  resolution: "motion-v@npm:1.6.1"
+  dependencies:
+    framer-motion: "npm:12.22.0"
+    hey-listen: "npm:^1.0.8"
+    motion-dom: "npm:12.22.0"
+  peerDependencies:
+    "@vueuse/core": ">=10.0.0"
+    vue: ">=3.0.0"
+  checksum: 10c0/dddf928aae9411631e49d3c9293d0027a711a1d14fcffde3ae6ba9847f3cd37a979cd8ee32e819c738407c344db8a8f3847b668af67fc80dbe85724b9ed8dfb1
+  languageName: node
+  linkType: hard
+
 "mrmime@npm:^2.0.0":
   version: 2.0.1
   resolution: "mrmime@npm:2.0.1"
@@ -7448,6 +7516,7 @@ __metadata:
     embla-carousel-autoplay: "npm:^8.6.0"
     embla-carousel-vue: "npm:^8.6.0"
     lucide-vue-next: "npm:^0.525.0"
+    motion-v: "npm:^1.6.1"
     nuxt: "npm:^4.0.1"
     nuxt-aos: "npm:^1.2.5"
     powerglitch: "npm:^2.4.0"

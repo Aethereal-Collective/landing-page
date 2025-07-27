@@ -10,6 +10,8 @@ COPY package*.json /app
 # You might want to use yarn or pnpm instead
 RUN yarn set version stable
 
+COPY .yarnrc.yml ./
+
 RUN yarn install
 
 COPY . /app

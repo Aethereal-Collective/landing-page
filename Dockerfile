@@ -15,7 +15,7 @@ COPY . /app
 RUN yarn run build
 
 # Instead of using a node:18-alpine image, we are using a distroless image. These are provided by google: https://github.com/GoogleContainerTools/distroless
-FROM node:18-alpine as prod
+FROM node:22-alpine as prod
 
 WORKDIR /app
 

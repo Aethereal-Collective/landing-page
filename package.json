@@ -38,7 +38,9 @@
     "vue-router": "^4.5.1"
   },
   "devDependencies": {
+    "embla-carousel": "^8.6.0",
     "nuxt-aos": "^1.2.5",
-    "typescript": "^5.8.3"
+    "typescript": "^5.8.3",
+    "vite": "^7.0.6"
   }
 }

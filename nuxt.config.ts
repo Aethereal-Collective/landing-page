@@ -1,10 +1,17 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
-
 import tailwindcss from "@tailwindcss/vite";
+import tsconfigPaths from "vite-tsconfig-paths";
+
+// https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-	compatibilityDate: "2024-04-03",
+	compatibilityDate: "2025-07-15",
 	devtools: { enabled: true },
-	modules: ["shadcn-nuxt", "@nuxtjs/color-mode", "@hypernym/nuxt-anime", "@nuxt/fonts", "@nuxt/icon", "nuxt-aos"],
+
+	modules: ["shadcn-nuxt", "@hypernym/nuxt-anime", "@nuxt/fonts", "@nuxt/icon", "nuxt-aos"],
+	css: ["~/assets/css/tailwind.css"],
+
+	vite: {
+		plugins: [tailwindcss(), tsconfigPaths()],
+	},
 
 	shadcn: {
 		/**
@@ -13,17 +20,14 @@ export default defineNuxtConfig({
 		prefix: "",
 		/**
 		 * Directory that the component lives in.
-		 * @default "./components/ui"
+		 * @default "./app/components/ui"
 		 */
-		componentDir: "./components/ui",
+		componentDir: "./app/components/ui",
 	},
+
 	fonts: {
 		defaults: {
 			weights: [400, 500, 600, 700, 800, 900],
 		},
-	},
-	css: ["~/assets/css/tailwind.css"],
-	vite: {
-		plugins: [tailwindcss()],
 	},
 });

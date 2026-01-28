@@ -64,20 +64,22 @@
 <script setup lang="ts">
 import AutoScroll from "embla-carousel-auto-scroll";
 
-const gameImage = ["/image/gamefi/pirate.png", "/image/gamefi/lumi.png", "/image/gamefi/blast.png", "/image/gamefi/nyan.png", "/image/gamefi/pixel.png", "/image/gamefi/super.png", "/image/gamefi/spellborne.png", "/image/gamefi/takedown.png", "/image/gamefi/sand.png", "/image/gamefi/zero.png", "/image/gamefi/imo.png"];
+const gameImage = ["/image/gamefi/pirate.png", "/image/gamefi/lumi.png", "/image/gamefi/blast.png", "/image/gamefi/nyan.png", "/image/gamefi/pixel.png", "/image/gamefi/super.png", "/image/gamefi/spellborne.png", "/image/gamefi/takedown.png", "/image/gamefi/sand.png", "/image/gamefi/zero.png", "/image/gamefi/imo.png", "/image/gamefi/ymir.png", "/image/gamefi/cambria.png", "/image/gamefi/frenzy.png", "/image/gamefi/sprite.png"];
 
-// First carousel images (1-5), duplicated if fewer items are needed for smooth scrolling.
+const midpoint = Math.ceil(gameImage.length / 2);
+
+// First carousel images (first half), duplicated if fewer items are needed for smooth scrolling.
 const firstCarouselImages = computed(() => {
-	const subset = gameImage.slice(0, 5);
-	return subset.length < 7 ? [...subset, ...subset] : subset;
+	const subset = gameImage.slice(0, midpoint);
+
+	return subset.length < 10 ? [...subset, ...subset] : subset;
 });
 
-// Second carousel images (6-11), duplicated if fewer items are needed for smooth scrolling.
+// Second carousel images (second half), duplicated if fewer items are needed for smooth scrolling.
 const secondCarouselImages = computed(() => {
-	const subset = gameImage.slice(5, 11);
+	const subset = gameImage.slice(midpoint);
 
-	console.log(subset);
-	return subset.length < 7 ? [...subset, ...subset] : subset;
+	return subset.length < 10 ? [...subset, ...subset] : subset;
 });
 
 const onClickExplore = () => {

@@ -1,27 +1,4 @@
-<template>
-  <div
-    class="gallery"
-    :class="cn('mb-[var(--size)] grid grid-cols-6 gap-1', props.containerClass)"
-  >
-    <img
-      v-for="(image, index) in props.items"
-      :key="index"
-      :src="image.src"
-      :alt="`image+${index}`"
-      class="gallery-img"
-      :class="
-        cn(
-          'size-[calc(var(--size)*2)] rounded object-cover transition-[clip-path,filter] duration-75',
-          props.class,
-        )
-      "
-    />
-  </div>
-</template>
-
 <script setup lang="ts">
-import { cn } from "@/lib/utils";
-
 interface Props {
   containerClass?: string;
   class?: string;
@@ -31,6 +8,22 @@ interface Props {
 }
 const props = defineProps<Props>();
 </script>
+
+<template>
+  <div
+    class="gallery mb-[var(--size)] grid grid-cols-6 gap-1"
+    :class="[props.containerClass]"
+  >
+    <img
+      v-for="(image, index) in props.items"
+      :key="index"
+      :src="image.src"
+      :alt="`image+${index}`"
+      class="gallery-img size-[calc(var(--size)*2)] rounded object-cover transition-[clip-path,filter] duration-75"
+      :class="[props.class]"
+    />
+  </div>
+</template>
 
 <style scoped>
 .gallery {

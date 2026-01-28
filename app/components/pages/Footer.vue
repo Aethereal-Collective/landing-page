@@ -17,6 +17,7 @@
 					<li><a href="https://discord.gg/aethereal" class="hover:underline" target="_blank">Discord</a></li>
 					<li><a href="https://twitter.com/aethereal_co" class="hover:underline" target="_blank">Twitter/X</a></li>
 					<li><a href="https://github.com/Aethereal-Collective" class="hover:underline" target="_blank">GitHub</a></li>
+					<li><a href="https://medium.com/@aethereal_co" class="hover:underline" target="_blank">Medium</a></li>
 				</ul>
 			</div>
 

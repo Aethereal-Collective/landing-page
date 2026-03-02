@@ -5,9 +5,23 @@ export default defineNuxtConfig({
 	compatibilityDate: "2025-07-15",
 	devtools: { enabled: true },
 
-	ssr: false,
+	ssr: true,
 
-	modules: ["shadcn-nuxt", "@hypernym/nuxt-anime", "@nuxt/fonts", "@nuxt/icon", "nuxt-aos"],
+	site: {
+		url: "https://aethereal.my.id",
+		name: "æthereal",
+	},
+
+	modules: [
+		"shadcn-nuxt",
+		"@hypernym/nuxt-anime",
+		"@nuxt/fonts",
+		"@nuxt/icon",
+		"nuxt-aos",
+		"@nuxt/image",
+		"@nuxtjs/sitemap",
+		"@nuxtjs/robots",
+	],
 	css: ["~/assets/css/tailwind.css"],
 
 	vite: {
@@ -15,20 +29,31 @@ export default defineNuxtConfig({
 	},
 
 	shadcn: {
-		/**
-		 * Prefix for all the imported component
-		 */
 		prefix: "",
-		/**
-		 * Directory that the component lives in.
-		 * @default "./app/components/ui"
-		 */
 		componentDir: "./app/components/ui",
 	},
 
 	fonts: {
 		defaults: {
-			weights: [400, 500, 600, 700, 800, 900],
+			weights: [400, 600, 700, 800, 900],
 		},
+	},
+
+	image: {
+		quality: 80,
+		format: ["webp", "png"],
+	},
+
+	robots: {
+		groups: [
+			{
+				userAgent: "*",
+				allow: "/",
+			},
+		],
+	},
+
+	nitro: {
+		compressPublicAssets: true,
 	},
 });

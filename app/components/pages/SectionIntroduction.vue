@@ -5,7 +5,7 @@
 		</div>
 
 		<div class="intro__image w-[80%] sm:w-[70%] md:w-[50%]">
-			<img src="/section-intro.png" alt="" />
+			<NuxtImg src="/section-intro.png" alt="æthereal crypto community illustration" loading="lazy" width="600" height="600" />
 		</div>
 	</section>
 </template>

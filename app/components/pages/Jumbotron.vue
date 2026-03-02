@@ -3,7 +3,7 @@
 		<div id="tsparticles"></div>
 
 		<div class="jumbotron__text flex flex-col gap-5">
-			<h2 class="text-2xl sm:text-3xl md:text-5xl text-center opacity-50">Join the Movement</h2>
+			<p class="text-2xl sm:text-3xl md:text-5xl text-center opacity-50">Join the Movement</p>
 
 			<h1 class="jumbotron__heading text-5xl sm:text-6xl md:text-7xl font-black inline-flex flex-col sm:flex-row items-center">
 				<span>We </span>
@@ -11,13 +11,13 @@
 				<span> Together</span>
 			</h1>
 
-			<h2 class="text-2xl sm:text-3xl md:text-5xl text-center opacity-50">Shape the Future</h2>
+			<p class="text-2xl sm:text-3xl md:text-5xl text-center opacity-50">Shape the Future</p>
 		</div>
 
 		<div class="absolute bottom-0 left-0 right-0 mb-10 flex justify-center items-center">
-			<NuxtLink to="#intro" class="italic opacity-45 flex flex-col justify-center items-center gap-y-5 text-xs sm:text-sm">
+			<NuxtLink to="#intro" class="italic opacity-45 flex flex-col justify-center items-center gap-y-5 text-xs sm:text-sm" aria-label="Scroll to introduction section">
 				<span class="scroll"> See more our movement </span>
-				<Icon name="ph:mouse-scroll-thin" class="animate-bounce text-xl" />
+				<Icon name="ph:mouse-scroll-thin" class="animate-bounce text-xl" aria-hidden="true" />
 			</NuxtLink>
 		</div>
 	</section>
@@ -25,20 +25,18 @@
 
 <script setup lang="ts">
 import { particleOptions } from "~/lib/particle";
-import { loadFull } from "tsparticles";
 import { tsParticles } from "@tsparticles/engine";
-
-// @ts-ignore
-import { PowerGlitch } from "powerglitch";
 
 const { $anime } = useNuxtApp();
 
 const words = ["Learn", "Build", "Grow"];
 const currentIndex = ref(0);
 const currentWord = ref(words[currentIndex.value]);
+let intervalId: ReturnType<typeof setInterval> | null = null;
 
 const animateWord = () => {
 	const wordElement = document.querySelector(".animated-word");
+	if (!wordElement) return;
 
 	$anime({
 		targets: wordElement,
@@ -63,20 +61,30 @@ const animateWord = () => {
 
 onMounted(async () => {
 	animateWord();
-	setInterval(animateWord, 5000);
+	intervalId = setInterval(animateWord, 5000);
 
+	// Lazy load PowerGlitch
+	const { PowerGlitch } = await import("powerglitch");
 	PowerGlitch.glitch(".scroll", {
 		timing: {
 			duration: 5000,
 		},
 	});
 
+	// Lazy load tsParticles slim bundle (smaller than loadFull)
+	const { loadSlim } = await import("@tsparticles/slim");
+	await loadSlim(tsParticles);
 	await tsParticles.load({
 		id: "tsparticles",
 		options: particleOptions as any,
 	});
+});
 
-	await loadFull(tsParticles);
+onBeforeUnmount(() => {
+	if (intervalId) {
+		clearInterval(intervalId);
+		intervalId = null;
+	}
 });
 </script>
 

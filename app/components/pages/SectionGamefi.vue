@@ -18,7 +18,7 @@
 						<div class="p-1">
 							<Card class="border-none">
 								<CardContent class="flex flex-row-reverse aspect-square items-center justify-center p-6">
-									<img :src="data" alt="" />
+									<NuxtImg :src="data.src" :alt="data.alt" loading="lazy" />
 								</CardContent>
 							</Card>
 						</div>
@@ -45,7 +45,7 @@
 						<div class="p-1">
 							<Card class="border-none">
 								<CardContent class="flex flex-row-reverse aspect-square items-center justify-center p-6">
-									<img :src="data" alt="" />
+									<NuxtImg :src="data.src" :alt="data.alt" loading="lazy" />
 								</CardContent>
 							</Card>
 						</div>
@@ -64,7 +64,23 @@
 <script setup lang="ts">
 import AutoScroll from "embla-carousel-auto-scroll";
 
-const gameImage = ["/image/gamefi/pirate.png", "/image/gamefi/lumi.png", "/image/gamefi/blast.png", "/image/gamefi/nyan.png", "/image/gamefi/pixel.png", "/image/gamefi/super.png", "/image/gamefi/spellborne.png", "/image/gamefi/takedown.png", "/image/gamefi/sand.png", "/image/gamefi/zero.png", "/image/gamefi/imo.png", "/image/gamefi/ymir.png", "/image/gamefi/cambria.png", "/image/gamefi/frenzy.png", "/image/gamefi/sprite.png"];
+const gameImage = [
+	{ src: "/image/gamefi/pirate.png", alt: "Pirate Nation" },
+	{ src: "/image/gamefi/lumi.png", alt: "Lumi" },
+	{ src: "/image/gamefi/blast.png", alt: "Blast" },
+	{ src: "/image/gamefi/nyan.png", alt: "Nyan Heroes" },
+	{ src: "/image/gamefi/pixel.png", alt: "Pixels" },
+	{ src: "/image/gamefi/super.png", alt: "Superverse" },
+	{ src: "/image/gamefi/spellborne.png", alt: "Spellborne" },
+	{ src: "/image/gamefi/takedown.png", alt: "Takedown" },
+	{ src: "/image/gamefi/sand.png", alt: "The Sandbox" },
+	{ src: "/image/gamefi/zero.png", alt: "Zero" },
+	{ src: "/image/gamefi/imo.png", alt: "IMO" },
+	{ src: "/image/gamefi/ymir.png", alt: "Ymir" },
+	{ src: "/image/gamefi/cambria.png", alt: "Cambria" },
+	{ src: "/image/gamefi/frenzy.png", alt: "Frenzy" },
+	{ src: "/image/gamefi/sprite.png", alt: "Sprite" },
+];
 
 const midpoint = Math.ceil(gameImage.length / 2);
 

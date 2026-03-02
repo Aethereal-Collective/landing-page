@@ -4,6 +4,7 @@ interface Props {
   class?: string;
   items: {
     src: string;
+    alt?: string;
   }[];
 }
 const props = defineProps<Props>();
@@ -14,11 +15,12 @@ const props = defineProps<Props>();
     class="gallery mb-[var(--size)] grid grid-cols-6 gap-1"
     :class="[props.containerClass]"
   >
-    <img
+    <NuxtImg
       v-for="(image, index) in props.items"
       :key="index"
       :src="image.src"
-      :alt="`image+${index}`"
+      :alt="image.alt || `Gallery image ${index + 1}`"
+      loading="lazy"
       class="gallery-img size-[calc(var(--size)*2)] rounded object-cover transition-[clip-path,filter] duration-75"
       :class="[props.class]"
     />

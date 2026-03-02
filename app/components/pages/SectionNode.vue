@@ -16,7 +16,16 @@
 </template>
 
 <script setup lang="ts">
-const nodeImage = [{ src: "/image/node/chasm.png" }, { src: "/image/node/dusk.png" }, { src: "/image/node/icn.png" }, { src: "/image/node/nillion.png" }, { src: "/image/node/rainbow.png" }, { src: "/image/node/spheron.png" }, { src: "/image/node/dill.png" }, { src: "/image/node/kopi.png" }];
+const nodeImage = [
+	{ src: "/image/node/chasm.png", alt: "Chasm Network" },
+	{ src: "/image/node/dusk.png", alt: "Dusk Network" },
+	{ src: "/image/node/icn.png", alt: "ICN Protocol" },
+	{ src: "/image/node/nillion.png", alt: "Nillion" },
+	{ src: "/image/node/rainbow.png", alt: "Rainbow" },
+	{ src: "/image/node/spheron.png", alt: "Spheron" },
+	{ src: "/image/node/dill.png", alt: "Dill" },
+	{ src: "/image/node/kopi.png", alt: "Kopi" },
+];
 
 const onClickExplore = () => {
 	navigateTo("https://validator.aethereal.top", {

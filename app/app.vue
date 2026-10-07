@@ -43,7 +43,7 @@ useHead({
 				url: siteUrl,
 				logo: `${siteUrl}/logo.jpg`,
 				description,
-				foundingDate: "2021",
+				foundingDate: "2023",
 				sameAs: [
 					"https://discord.gg/aethereal",
 					"https://twitter.com/aethereal_co",

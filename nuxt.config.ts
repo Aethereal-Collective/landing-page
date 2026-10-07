@@ -8,7 +8,7 @@ export default defineNuxtConfig({
 	ssr: true,
 
 	site: {
-		url: "https://aethereal.my.id",
+		url: "https://aethereal.top",
 		name: "æthereal",
 	},
 

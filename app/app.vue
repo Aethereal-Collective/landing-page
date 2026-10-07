@@ -1,6 +1,6 @@
 <script setup>
-const siteUrl = "https://aethereal.my.id";
-const ogImageUrl = "https://ogcdn.net/6064b869-74ed-4eb9-b76c-0b701ffe7e6b/v4/aethereal.my.id/%C3%A6thereal/https%3A%2F%2Faethereal.my.id%2Flogo.jpg/og.png";
+const siteUrl = "https://aethereal.top";
+const ogImageUrl = "https://ogcdn.net/6064b869-74ed-4eb9-b76c-0b701ffe7e6b/v4/aethereal.top/%C3%A6thereal/https%3A%2F%2Faethereal.top%2Flogo.jpg/og.png";
 const description = "æthereal — a tech community in Indonesia focused on AI learning, data science, and open-source developer tools. Learn, build, and grow together.";
 
 useSeoMeta({

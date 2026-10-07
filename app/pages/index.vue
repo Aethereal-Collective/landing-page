@@ -7,12 +7,6 @@
 		<PagesSectionAi />
 
 		<ClientOnly>
-			<PagesSectionGamefi />
-		</ClientOnly>
-
-		<PagesSectionNode />
-
-		<ClientOnly>
 			<PagesSectionGithub />
 		</ClientOnly>
 

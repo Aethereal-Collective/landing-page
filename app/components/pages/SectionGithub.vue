@@ -1,6 +1,6 @@
 <template>
 	<section id="github" class="relative w-full flex flex-col items-center justify-center gap-10 px-10 py-20 md:py-40">
-		<h2 class="text-center text-xl xl:text-3xl opacity-80 capitalize font-medium">Explore our Creation</h2>
+		<h2 class="text-center text-xl xl:text-3xl opacity-80 capitalize font-medium">Open-Source Developer Tools</h2>
 
 		<div class="w-full md:w-[80%] flex flex-wrap justify-center items-stretch gap-10 overflow-hidden rounded-lg bg-background md:shadow-xl">
 			<a class="block" v-for="review in reviews" :key="review.name" :href="review.url" target="_blank" rel="noopener noreferrer">
@@ -26,30 +26,6 @@ import { Github } from "lucide-vue-next";
 // Reviews data
 const reviews = [
 	{
-		name: "Pharos Testnet",
-		username: "@lilnoxvertz",
-		body: "Automation for Pharos Testnet",
-		url: "https://github.com/lilnoxvertz/pharos",
-	},
-	{
-		name: "Discord Auto Chat",
-		username: "@astrofounder",
-		body: "Automate your chat messages on Discord with ease.",
-		url: "https://github.com/Aethereal-Collective/discord-auto-chat",
-	},
-	{
-		name: "BNB Testnet Sender",
-		username: "@astrofounder",
-		body: "Bulk send BNB to multiple addresses on the testnet.",
-		url: "https://github.com/Aethereal-Collective/bnb-testnet-sender",
-	},
-	{
-		name: "Cloudflare Bypass Extension",
-		username: "@astrofounder",
-		body: "Bypass Cloudflare protection with this extension.",
-		url: "https://github.com/Aethereal-Collective/cloudflare-bypass-extension",
-	},
-	{
 		name: "FnG Index Discord Bot",
 		username: "@Fanreza",
 		body: "Track FnG Index in real-time with our Discord bot.",
@@ -60,12 +36,6 @@ const reviews = [
 		username: "@Fanreza",
 		body: "Track Sepolia gas prices in real-time with our Discord bot.",
 		url: "https://github.com/Fanreza/sepolia-gas-tracker",
-	},
-	{
-		name: "MegaETH Testnet",
-		username: "@lilnoxvertz",
-		body: "Automate your transactions on the MegaETH testnet.",
-		url: "https://github.com/lilnoxvertz/megaeth",
 	},
 ];
 </script>

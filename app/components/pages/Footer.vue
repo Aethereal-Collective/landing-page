@@ -7,7 +7,7 @@
 					<NuxtImg src="/logo.jpg" alt="æthereal logo" class="w-6 h-6" width="24" height="24" loading="lazy" />
 					<span class="font-semibold text-lg">æthereal</span>
 				</div>
-				<p class="text-sm max-w-sm">A unique crypto collective since '21, based in Indonesia.</p>
+				<p class="text-sm max-w-sm">A tech community in Indonesia focused on AI learning, data science, and open-source developer tools.</p>
 			</div>
 
 			<!-- Column 2: Socials -->
@@ -35,6 +35,7 @@
 			<div>
 				<h3 class="text-sm font-bold mb-3">Resources</h3>
 				<ul class="space-y-2 text-sm">
+					<li><a target="_blank" rel="noopener noreferrer" href="https://medium.com/@aethereal_co" class="hover:underline">Blog</a></li>
 					<li><a target="_blank" rel="noopener noreferrer" href="https://www.dropbox.com/scl/fo/uvr9qn3ki94wm99zh012j/AEOCG77wwtESqiQHU5rr8LE?rlkey=itwrpsogfbvbovwci4xalvz8g&st=3hbkq67j&dl=0" class="hover:underline">Brand Assets</a></li>
 				</ul>
 			</div>

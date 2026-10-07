@@ -4,6 +4,8 @@
 
 		<PagesSectionIntroduction />
 
+		<PagesSectionAi />
+
 		<ClientOnly>
 			<PagesSectionGamefi />
 		</ClientOnly>

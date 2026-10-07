@@ -1,11 +1,11 @@
 <script setup>
 const siteUrl = "https://aethereal.my.id";
 const ogImageUrl = "https://ogcdn.net/6064b869-74ed-4eb9-b76c-0b701ffe7e6b/v4/aethereal.my.id/%C3%A6thereal/https%3A%2F%2Faethereal.my.id%2Flogo.jpg/og.png";
-const description = "æthereal — a unique crypto collective since '21, based in Indonesia. Learn, build, and grow together.";
+const description = "æthereal — a tech community in Indonesia focused on AI learning, data science, and open-source developer tools. Learn, build, and grow together.";
 
 useSeoMeta({
 	title: "æthereal",
-	ogTitle: "æthereal — Crypto Collective",
+	ogTitle: "æthereal — AI & Data Science Community",
 	description,
 	ogDescription: description,
 	ogImage: ogImageUrl,
@@ -18,7 +18,7 @@ useSeoMeta({
 	ogUrl: siteUrl,
 	twitterCard: "summary_large_image",
 	twitterImage: ogImageUrl,
-	twitterTitle: "æthereal — Crypto Collective",
+	twitterTitle: "æthereal — AI & Data Science Community",
 	twitterDescription: description,
 	author: "æthereal Collective",
 });

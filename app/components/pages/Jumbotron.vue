@@ -3,13 +3,13 @@
 		<div id="tsparticles"></div>
 
 		<div class="jumbotron__text flex flex-col gap-5">
-			<p class="text-2xl sm:text-3xl md:text-5xl text-center opacity-50">Join the Movement</p>
+			<h1 class="text-2xl sm:text-3xl md:text-5xl text-center opacity-50">Aethereal · AI, Data &amp; Blockchain</h1>
 
-			<h1 class="jumbotron__heading text-5xl sm:text-6xl md:text-7xl font-black inline-flex flex-col sm:flex-row items-center">
+			<p class="jumbotron__heading text-5xl sm:text-6xl md:text-7xl font-black inline-flex flex-col sm:flex-row items-center">
 				<span>We </span>
 				<span class="animated-word inline-block w-[180px] md:w-[220px] text-center overflow-hidden">{{ currentWord }}</span>
 				<span> Together</span>
-			</h1>
+			</p>
 
 			<p class="text-2xl sm:text-3xl md:text-5xl text-center opacity-50">Shape the Future</p>
 		</div>

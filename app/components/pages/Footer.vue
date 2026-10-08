@@ -25,9 +25,9 @@
 			<div>
 				<h3 class="text-sm font-bold mb-3">Products</h3>
 				<ul class="space-y-2 text-sm">
-					<li><a target="_blank" href="/faucet" class="text-muted pointer-events-none">Faucet</a></li>
+					<li><span class="text-muted-foreground">Faucet (soon)</span></li>
 					<li><a target="_blank" rel="noopener noreferrer" href="https://validator.aethereal.top/" class="hover:underline">Validator</a></li>
-					<li><a target="_blank" href="/trading-calculator" class="text-muted pointer-events-none">Trading Calculator</a></li>
+					<li><span class="text-muted-foreground">Trading Calculator (soon)</span></li>
 				</ul>
 			</div>
 
@@ -35,6 +35,7 @@
 			<div>
 				<h3 class="text-sm font-bold mb-3">Resources</h3>
 				<ul class="space-y-2 text-sm">
+					<li><NuxtLink to="/about" class="hover:underline">About</NuxtLink></li>
 					<li><a target="_blank" rel="noopener noreferrer" href="https://medium.com/@aethereal_co" class="hover:underline">Blog</a></li>
 					<li><a target="_blank" rel="noopener noreferrer" href="https://www.dropbox.com/scl/fo/uvr9qn3ki94wm99zh012j/AEOCG77wwtESqiQHU5rr8LE?rlkey=itwrpsogfbvbovwci4xalvz8g&st=3hbkq67j&dl=0" class="hover:underline">Brand Assets</a></li>
 				</ul>
@@ -43,7 +44,7 @@
 
 		<!-- Bottom Bar -->
 		<div class="container mx-auto mt-20 border-t border-border pt-6 flex flex-col md:flex-row justify-between items-center text-xs text-muted-foreground">
-			<p>&copy; 2025 æthereal &middot; All rights reserved</p>
+			<p>&copy; {{ new Date().getFullYear() }} Aethereal (æthereal) &middot; All rights reserved</p>
 			<a href="https://nuxt.com" target="_blank" rel="noopener noreferrer" class="mt-4 md:mt-0 hover:underline">Built with Nuxt</a>
 		</div>
 	</footer>

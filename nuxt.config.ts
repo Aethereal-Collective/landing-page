@@ -9,7 +9,9 @@ export default defineNuxtConfig({
 
 	site: {
 		url: "https://aethereal.top",
-		name: "æthereal",
+		name: "Aethereal",
+		description: "Indonesian tech company building AI, data science, blockchain, and fintech solutions, plus open-source developer tools.",
+		defaultLocale: "en",
 	},
 
 	modules: [

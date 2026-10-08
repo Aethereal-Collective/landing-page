@@ -6,9 +6,7 @@
 
 		<PagesSectionAi />
 
-		<ClientOnly>
-			<PagesSectionGithub />
-		</ClientOnly>
+		<PagesSectionGithub />
 
 		<PagesFooter />
 	</div>

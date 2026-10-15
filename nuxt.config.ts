@@ -16,7 +16,6 @@ export default defineNuxtConfig({
 
 	modules: [
 		"shadcn-nuxt",
-		"@hypernym/nuxt-anime",
 		"@nuxt/fonts",
 		"@nuxt/icon",
 		"nuxt-aos",
@@ -24,6 +23,8 @@ export default defineNuxtConfig({
 		"@nuxtjs/sitemap",
 		"@nuxtjs/robots",
 	],
+	aos: { once: true, duration: 700, offset: 60 },
+
 	css: ["~/assets/css/tailwind.css"],
 
 	vite: {

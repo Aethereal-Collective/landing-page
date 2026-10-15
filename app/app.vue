@@ -19,7 +19,7 @@ useSeoMeta({
 	ogLocale: "en_US",
 	ogSiteName: "æthereal",
 	ogUrl: pageUrl,
-	themeColor: "#09090b",
+	themeColor: "#ffffff",
 	twitterCard: "summary_large_image",
 	twitterImage: ogImageUrl,
 	twitterTitle: title,
@@ -59,6 +59,7 @@ useHead({
 					"https://x.com/aethereal_co",
 					"https://github.com/Aethereal-Collective",
 					"https://medium.com/@aethereal_co",
+					"https://www.linkedin.com/company/aethereal-collective",
 				],
 			}]),
 		},
@@ -67,10 +68,10 @@ useHead({
 </script>
 
 <template>
-	<Html lang="en" class="dark">
+	<Html lang="en">
 		<div>
 			<NuxtLayout>
-				<NuxtLoadingIndicator color="#B68A62" />
+				<NuxtLoadingIndicator color="#0a0a0a" />
 				<NuxtPage />
 			</NuxtLayout>
 		</div>

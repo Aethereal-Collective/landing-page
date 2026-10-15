@@ -1,5 +1,6 @@
 <template>
-	<div>
+	<div class="bg-white text-neutral-950">
+		<LandingNav />
 		<main class="w-full flex flex-col items-center px-5 pt-32 pb-20 md:pt-40">
 			<article class="w-full max-w-3xl flex flex-col gap-12">
 				<header class="flex flex-col gap-4">
@@ -47,7 +48,7 @@
 			</article>
 		</main>
 
-		<PagesFooter />
+		<LandingFooter />
 	</div>
 </template>
 

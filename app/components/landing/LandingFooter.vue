@@ -38,6 +38,7 @@ const columns = [
 			{ label: "About", to: "/about" },
 			{ label: "Shield", to: "/#shield" },
 			{ label: "Projects", to: "/#projects" },
+			{ label: "Partners", to: "/#partners" },
 			{ label: "Insights", to: "/#insights" },
 		],
 	},

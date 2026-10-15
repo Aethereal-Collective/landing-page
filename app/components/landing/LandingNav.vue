@@ -35,6 +35,7 @@ const links = [
 	{ label: "What We Do", to: "/#focus" },
 	{ label: "Shield", to: "/#shield" },
 	{ label: "Projects", to: "/#projects" },
+	{ label: "Partners", to: "/#partners" },
 	{ label: "Insights", to: "/#insights" },
 	{ label: "About", to: "/about" },
 ];

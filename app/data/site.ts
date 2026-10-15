@@ -138,3 +138,15 @@ export const FAQ = [
 		a: "Email team@aethereal.top with what you have in mind: partnerships, research, or building something together.",
 	},
 ];
+
+// Partner projects. Screenshots live in public/image/partners/ (1440×900 webp).
+export const PARTNERS = [
+	{
+		name: "EVM Shaker",
+		tagline: "Liquidity. In your hands.",
+		description: "A multichain liquidity workspace: a clearer view of your positions, value over time, and unclaimed fees, with more control over your next move.",
+		chains: ["Ethereum", "Base", "BNB Chain", "Robinhood", "Arc"],
+		image: "/image/partners/evmshaker.webp",
+		url: "https://app.evmshaker.io/app",
+	},
+];

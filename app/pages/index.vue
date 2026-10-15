@@ -8,6 +8,7 @@
 			<LandingFocus />
 			<LandingShield />
 			<LandingProjects />
+			<LandingPartners />
 			<LandingInsights />
 			<LandingProcess />
 			<LandingFaq />

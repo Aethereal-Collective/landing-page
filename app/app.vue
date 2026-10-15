@@ -3,8 +3,8 @@ const siteUrl = "https://aethereal.top";
 const route = useRoute();
 const pageUrl = computed(() => siteUrl + (route.path === "/" ? "" : route.path));
 const ogImageUrl = "https://ogcdn.net/6064b869-74ed-4eb9-b76c-0b701ffe7e6b/v4/aethereal.top/%C3%A6thereal/https%3A%2F%2Faethereal.top%2Flogo.jpg/og.png";
-const title = "Aethereal (æthereal) — AI, Data Science & Blockchain Company in Indonesia";
-const description = "Aethereal is an Indonesian tech company building AI, data science, blockchain, and fintech solutions, plus open-source developer tools.";
+const title = "Aethereal (æthereal) — AI, Data Science & Blockchain Organization in Indonesia";
+const description = "Aethereal is an Indonesian tech organization building AI, data science, blockchain, and fintech solutions, plus open-source developer tools.";
 
 useSeoMeta({
 	title,
@@ -52,7 +52,7 @@ useHead({
 				foundingDate: "2023",
 				founder: { "@type": "Person", name: "Muhamad Jamil Fanreza", sameAs: "https://www.linkedin.com/in/fanreza" },
 				email: "team@aethereal.top",
-				address: { "@type": "PostalAddress", addressLocality: "Jakarta", addressCountry: "ID" },
+				address: { "@type": "PostalAddress", addressCountry: "ID" },
 				knowsAbout: ["Artificial Intelligence", "Data Science", "Blockchain", "Fintech"],
 				sameAs: [
 					"https://discord.gg/aethereal",

@@ -119,7 +119,7 @@ export const PROCESS = [
 export const FAQ = [
 	{
 		q: "What is Aethereal?",
-		a: "Aethereal (æthereal) is a technology company based in Jakarta, Indonesia, founded in 2023. We build products and publish research across AI, data science, blockchain, and fintech.",
+		a: "Aethereal (æthereal) is a technology organization based in Indonesia, founded in 2023. We build products and publish research across AI, data science, blockchain, and fintech.",
 	},
 	{
 		q: "What is Aethereal Shield?",

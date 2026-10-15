@@ -6,7 +6,7 @@
 				<header class="flex flex-col gap-4">
 					<h1 class="text-4xl md:text-6xl font-black">About Aethereal</h1>
 					<p class="text-lg md:text-xl opacity-70 leading-relaxed">
-						Aethereal (æthereal) is a technology company based in Jakarta, Indonesia, founded in 2023. We work across artificial intelligence, data science, blockchain, and fintech, and we build open-source developer tools that anyone can use.
+						Aethereal (æthereal) is a technology organization based in Indonesia, founded in 2023. We work across artificial intelligence, data science, blockchain, and fintech, and we build open-source developer tools that anyone can use.
 					</p>
 				</header>
 
@@ -53,8 +53,8 @@
 </template>
 
 <script setup lang="ts">
-const title = "About Aethereal — AI, Data Science & Blockchain Company in Jakarta";
-const description = "Learn about Aethereal, a Jakarta-based tech company founded in 2023 working on AI, data science, blockchain, fintech, and open-source developer tools.";
+const title = "About Aethereal — AI, Data Science & Blockchain Organization in Indonesia";
+const description = "Learn about Aethereal, an Indonesia-based tech organization founded in 2023 working on AI, data science, blockchain, fintech, and open-source developer tools.";
 
 useSeoMeta({ title, ogTitle: title, twitterTitle: title, description, ogDescription: description, twitterDescription: description });
 

@@ -6,7 +6,7 @@
 					<NuxtImg src="/logo.jpg" alt="Aethereal logo" width="28" height="28" class="size-7 rounded-full" loading="lazy" />
 					æthereal
 				</NuxtLink>
-				<p class="mt-4 max-w-sm text-sm leading-relaxed text-neutral-500">A Jakarta-based tech company working on AI, data science, blockchain, and fintech.</p>
+				<p class="mt-4 max-w-sm text-sm leading-relaxed text-neutral-500">An Indonesia-based organization working on AI, data science, blockchain, and fintech.</p>
 			</div>
 
 			<div v-for="col in columns" :key="col.title">
@@ -33,7 +33,7 @@ import { LINKS } from "~/data/site";
 
 const columns = [
 	{
-		title: "Company",
+		title: "Organization",
 		links: [
 			{ label: "About", to: "/about" },
 			{ label: "Shield", to: "/#shield" },

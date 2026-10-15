@@ -11,7 +11,7 @@
 			</h1>
 
 			<p class="mt-8 max-w-xl text-lg leading-relaxed text-neutral-500 md:text-xl">
-				Aethereal is a Jakarta-based tech company turning AI and data into simple, safe tools for the onchain economy.
+				Aethereal is an Indonesia-based organization turning AI and data into simple, safe tools for the onchain economy.
 			</p>
 
 			<div class="mt-4 h-7 text-base text-neutral-400 md:h-8 md:text-lg">

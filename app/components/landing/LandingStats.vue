@@ -30,7 +30,7 @@ const visibleStats = computed(() =>
 		{ label: "Discord members", value: stats.value?.discordMembers ?? null, suffix: "+", ticker: true },
 		{ label: "Projects built", value: PROJECTS.length + 1, suffix: "", ticker: true },
 		{ label: "Focus areas", value: FOCUS_AREAS.length, suffix: "", ticker: true },
-		{ label: "Founded in Jakarta", value: 2023, suffix: "", ticker: false },
+		{ label: "Founded in Indonesia", value: 2023, suffix: "", ticker: false },
 	].filter((s) => s.value != null),
 );
 </script>

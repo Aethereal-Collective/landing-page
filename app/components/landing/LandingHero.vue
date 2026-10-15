@@ -4,9 +4,7 @@
 		<div class="pointer-events-none absolute inset-x-0 top-1/2 h-[70%] -translate-y-1/2 bg-[radial-gradient(closest-side,rgba(255,255,255,0.92),transparent)] md:hidden" aria-hidden="true" />
 
 		<div class="relative z-10 flex max-w-4xl flex-col items-center text-center">
-			<span class="rounded-full border border-neutral-200 bg-white/70 px-5 py-2 text-[11px] font-semibold uppercase tracking-[0.25em] text-neutral-500 backdrop-blur">AI · Data · Blockchain · Fintech</span>
-
-			<h1 class="mt-8 text-[clamp(3.25rem,11vw,8.5rem)] font-extrabold leading-[0.9] tracking-[-0.04em] text-neutral-950">
+			<h1 class="text-[clamp(3.25rem,11vw,8.5rem)] font-extrabold leading-[0.9] tracking-[-0.04em] text-neutral-950">
 				<span class="sr-only">Aethereal: </span>
 				Onchain
 				<span class="chrome-text block pb-2">Intelligence</span>

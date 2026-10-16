@@ -33,8 +33,7 @@ import { LINKS } from "~/data/site";
 const open = ref(false);
 const links = [
 	{ label: "What We Do", to: "/#focus" },
-	{ label: "Halt", to: "/#halt" },
-	{ label: "Projects", to: "/#projects" },
+	{ label: "Products", to: "/products" },
 	{ label: "Partners", to: "/#partners" },
 	{ label: "Research", to: "/research" },
 	{ label: "About", to: "/about" },

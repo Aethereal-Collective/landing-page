@@ -6,7 +6,7 @@
 				<span class="chrome-text">clear, safe, and understandable</span>.
 			</p>
 
-			<dl class="mt-16 grid grid-cols-2 gap-px overflow-hidden rounded-3xl border border-neutral-200 bg-neutral-200 md:grid-cols-4">
+			<dl class="mt-16 grid grid-cols-1 gap-px overflow-hidden rounded-3xl border border-neutral-200 bg-neutral-200 sm:grid-cols-3">
 				<div v-for="stat in visibleStats" :key="stat.label" class="flex flex-col items-center gap-2 bg-white px-4 py-10 text-center">
 					<dt class="order-2 text-sm text-neutral-500">{{ stat.label }}</dt>
 					<dd class="order-1 text-4xl font-extrabold tracking-tight md:text-5xl">
@@ -20,14 +20,13 @@
 </template>
 
 <script setup lang="ts">
-import { FOCUS_AREAS, PROJECTS } from "~/data/site";
+import { FOCUS_AREAS } from "~/data/site";
 
 const { data: stats } = await useFetch("/api/stats", { key: "site-stats" });
 
 const visibleStats = computed(() =>
 	[
 		{ label: "Discord members", value: stats.value?.discordMembers ?? null, suffix: "+", ticker: true },
-		{ label: "Projects built", value: PROJECTS.length + 1, suffix: "", ticker: true },
 		{ label: "Focus areas", value: FOCUS_AREAS.length, suffix: "", ticker: true },
 		{ label: "Founded in Indonesia", value: 2023, suffix: "", ticker: false },
 	].filter((s) => s.value != null),

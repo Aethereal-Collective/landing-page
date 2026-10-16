@@ -3,7 +3,7 @@
 		<LandingHeading eyebrow="What we do" title="Four disciplines," accent="one direction." subtitle="Products that make onchain money simpler and safer." />
 
 		<InspiraBentoGrid class="mt-16 max-w-6xl">
-			<InspiraBentoGridCard v-for="area in areas" :key="area.name" v-bind="area" cta="See our projects" href="/#projects" data-aos="fade-up">
+			<InspiraBentoGridCard v-for="area in areas" :key="area.name" v-bind="area" cta="See our products" href="/products" data-aos="fade-up">
 				<template #background>
 					<Icon :name="area.iconName" class="absolute -right-6 -top-6 text-[11rem] text-neutral-100 transition-transform duration-500 group-hover:scale-110" aria-hidden="true" />
 				</template>

@@ -7,7 +7,6 @@ export const LINKS = {
 	github: "https://github.com/Aethereal-Collective",
 	medium: "https://medium.com/@aethereal_co",
 	email: "mailto:team@aethereal.top",
-	halt: "https://halt.aethereal.top/en",
 	brandAssets: "https://www.dropbox.com/scl/fo/uvr9qn3ki94wm99zh012j/AEOCG77wwtESqiQHU5rr8LE?rlkey=itwrpsogfbvbovwci4xalvz8g&st=3hbkq67j&dl=0",
 };
 
@@ -38,75 +37,12 @@ export const FOCUS_AREAS = [
 	},
 ];
 
-export const HALT_FEATURES = [
-	{
-		icon: "ph:globe-x-light",
-		title: "Domain Shield",
-		body: "Fake exchange and dApp sites are blocked with a full-page warning.",
-		points: ["160K+ known phishing sites", "Lookalike name detection", "Homoglyphs & punycode", "On-device detection model"],
-	},
-	{
-		icon: "ph:hand-palm-light",
-		title: "Transaction Guard",
-		body: "Requests drainers rely on are held until you decide.",
-		points: ["Unlimited token approvals", "Approval for all NFTs", "Permit & Permit2", "eth_sign"],
-	},
-	{
-		icon: "ph:lock-key-light",
-		title: "Fully Private",
-		body: "Every check runs on your device. Nothing is sent anywhere.",
-		points: ["No server", "No account", "No tracking", "Works offline"],
-	},
-];
-
 export const PROJECTS = [
 	{
-		name: "Syno",
-		tag: "Payments",
-		description: "Sending money as easy as texting: pay @usernames, split bills, gift envelopes, QR payment requests, payroll, swaps, and yield.",
-		url: "https://github.com/Fanreza/Syno",
-	},
-	{
-		name: "Auren",
-		tag: "DeFi",
-		description: "DeFi yield in familiar shapes: goal-based pockets, an earn catalog, and a multi-vault strategy marketplace on one smart account that pays gas in USDC.",
-		url: "https://github.com/Fanreza/Auren",
-	},
-	{
-		name: "Nestora",
-		tag: "Savings",
-		description: "A DeFi savings app on Base. Create pockets, set goals, and earn yield.",
-		url: "https://github.com/Fanreza/Nestora",
-	},
-	{
-		name: "HashBase",
-		tag: "AI × Data",
-		description: "A verifiable AI dataset hub. Datasets live on Shelby decentralized storage with integrity proofs anchored on Aptos.",
-		url: "https://github.com/Fanreza/HashBase",
-	},
-	{
-		name: "Meteora Toolkit",
-		tag: "Solana",
-		description: "Discover and track Meteora DLMM and DAMM liquidity pools on Solana, right from a Towns bot.",
-		url: "https://github.com/Fanreza/towns-bot-meteora-toolkit",
-	},
-	{
-		name: "BlockScissor",
-		tag: "Onchain Game",
-		description: "Onchain rock-paper-scissors on Somnia with realtime updates powered by the Somnia Reactivity SDK.",
-		url: "https://github.com/Fanreza/BlockScissor",
-	},
-	{
-		name: "Fear & Greed Bot",
-		tag: "Market Data",
-		description: "A Discord bot that tracks the crypto Fear & Greed Index in real time.",
-		url: "https://github.com/Fanreza/discord-bot-fear-and-greed-index",
-	},
-	{
-		name: "DAO Funding Tracker",
-		tag: "Tooling",
-		description: "A Discord bot that tracks wallet funding for DAOs.",
-		url: "https://github.com/Fanreza/discord-bot-wallet-funding",
+		name: "Halt",
+		tag: "Browser extension",
+		description: "Blocks crypto phishing sites and holds back dangerous wallet requests.",
+		url: "https://halt.aethereal.top/en",
 	},
 ];
 
@@ -135,10 +71,6 @@ export const FAQ = [
 	{
 		q: "What is Aethereal?",
 		a: "Aethereal (æthereal) is a technology organization based in Indonesia, founded in 2023. We build products and publish research across AI, data science, blockchain, and fintech.",
-	},
-	{
-		q: "What is Halt?",
-		a: "Halt is our free browser extension for Chrome and Brave. It blocks crypto phishing sites and holds back dangerous wallet requests.",
 	},
 	{
 		q: "Do you give investment advice?",

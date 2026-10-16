@@ -1,9 +1,9 @@
 <template>
-	<section id="partners" class="w-full scroll-mt-24 bg-white px-4 py-24 md:py-32">
+	<section id="partners" class="w-full scroll-mt-24 bg-neutral-50/60 px-4 py-24 md:py-32">
 		<LandingHeading eyebrow="Partners" title="Built by" accent="our partners." subtitle="Products from teams we partner with." />
 
 		<div class="mx-auto mt-16 flex max-w-6xl flex-col gap-8">
-			<a v-for="p in PARTNERS" :key="p.name" :href="p.url" target="_blank" rel="noopener noreferrer" class="group grid items-center gap-8 overflow-hidden rounded-[2rem] border border-neutral-200 bg-neutral-50/60 p-4 transition-shadow hover:shadow-[0_24px_60px_rgba(0,0,0,0.08)] md:p-6 lg:grid-cols-[1.4fr_1fr]" data-aos="fade-up">
+			<a v-for="p in PARTNERS" :key="p.name" :href="p.url" target="_blank" rel="noopener noreferrer" class="group grid items-center gap-8 overflow-hidden rounded-[2rem] border border-neutral-200 bg-white p-4 transition-shadow hover:shadow-[0_24px_60px_rgba(0,0,0,0.08)] md:p-6 lg:grid-cols-[1.4fr_1fr]" data-aos="fade-up">
 				<div class="overflow-hidden rounded-2xl border border-neutral-200 bg-white shadow-sm">
 					<div class="flex items-center gap-1.5 border-b border-neutral-200 px-4 py-3" aria-hidden="true">
 						<span class="size-2.5 rounded-full bg-neutral-300" /><span class="size-2.5 rounded-full bg-neutral-300" /><span class="size-2.5 rounded-full bg-neutral-300" />

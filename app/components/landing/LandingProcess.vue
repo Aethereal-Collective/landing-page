@@ -1,5 +1,5 @@
 <template>
-	<section class="w-full bg-white px-4 py-24 md:py-32">
+	<section class="w-full bg-neutral-50/60 px-4 py-24 md:py-32">
 		<LandingHeading eyebrow="How we work" title="Research. Build." accent="Share." />
 
 		<ol class="mx-auto mt-16 grid max-w-6xl gap-5 md:grid-cols-3">

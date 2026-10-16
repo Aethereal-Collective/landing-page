@@ -1,5 +1,5 @@
 <template>
-	<section v-if="reports.length" id="research" class="w-full scroll-mt-24 bg-neutral-50/60 px-4 py-24 md:py-32">
+	<section v-if="reports.length" id="research" class="w-full scroll-mt-24 bg-white px-4 py-24 md:py-32">
 		<LandingHeading eyebrow="Research" title="Research, explained" accent="in plain language." subtitle="Our writing on crypto markets, tokenomics, and onchain business models." />
 
 		<div class="mx-auto mt-16 grid max-w-6xl gap-6 sm:grid-cols-2 lg:grid-cols-3">

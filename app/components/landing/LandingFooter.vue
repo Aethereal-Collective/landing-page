@@ -36,8 +36,7 @@ const columns = [
 		title: "Organization",
 		links: [
 			{ label: "About", to: "/about" },
-			{ label: "Halt", to: "/#halt" },
-			{ label: "Projects", to: "/#projects" },
+			{ label: "Products", to: "/products" },
 			{ label: "Partners", to: "/#partners" },
 			{ label: "Research", to: "/research" },
 		],

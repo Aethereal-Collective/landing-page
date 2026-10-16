@@ -28,16 +28,6 @@
 				</section>
 
 				<section class="flex flex-col gap-4">
-					<h2 class="text-2xl md:text-3xl font-semibold">Team</h2>
-					<ul class="flex flex-col gap-3">
-						<li v-for="member in team" :key="member.name">
-							<a :href="member.linkedin" target="_blank" rel="noopener noreferrer" class="font-semibold hover:underline">{{ member.name }}</a>
-							<span class="opacity-70"> · {{ member.role }}</span>
-						</li>
-					</ul>
-				</section>
-
-				<section class="flex flex-col gap-4">
 					<h2 class="text-2xl md:text-3xl font-semibold">Contact</h2>
 					<p class="opacity-70 leading-relaxed">
 						Email us at <a href="mailto:team@aethereal.top" class="underline">team@aethereal.top</a>, or reach us on <a href="https://x.com/aethereal_co" target="_blank" rel="noopener noreferrer" class="underline">X</a> and <a href="https://github.com/Aethereal-Collective" target="_blank" rel="noopener noreferrer" class="underline">GitHub</a>.
@@ -65,5 +55,4 @@ const areas = [
 	{ title: "Fintech", body: "Data-driven tools that help people understand markets and make better financial decisions." },
 ];
 
-const team = [{ name: "Muhamad Jamil Fanreza", role: "Head of Operations", linkedin: "https://www.linkedin.com/in/fanreza" }];
 </script>

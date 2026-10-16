@@ -43,6 +43,7 @@ export const PROJECTS = [
 		tag: "Browser extension",
 		description: "Blocks crypto phishing sites and holds back dangerous wallet requests.",
 		url: "https://halt.aethereal.top/en",
+		image: "/image/halt.webp",
 	},
 ];
 

@@ -50,7 +50,6 @@ useHead({
 				logo: `${siteUrl}/logo.jpg`,
 				description,
 				foundingDate: "2023",
-				founder: { "@type": "Person", name: "Muhamad Jamil Fanreza", sameAs: "https://www.linkedin.com/in/fanreza" },
 				email: "team@aethereal.top",
 				address: { "@type": "PostalAddress", addressCountry: "ID" },
 				knowsAbout: ["Artificial Intelligence", "Data Science", "Blockchain", "Fintech"],

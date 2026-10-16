@@ -5,7 +5,8 @@
 		<ul class="mx-auto mt-14 max-w-4xl divide-y divide-neutral-200 border-y border-neutral-200">
 			<li v-for="p in PROJECTS" :key="p.name">
 				<a :href="p.url" target="_blank" rel="noopener noreferrer" class="group flex items-center justify-between gap-4 py-5">
-					<span class="flex flex-col">
+					<NuxtImg v-if="p.image" :src="p.image" :alt="`${p.name} screenshot`" width="160" height="100" loading="lazy" class="hidden aspect-[16/10] w-40 shrink-0 rounded-xl border border-neutral-200 object-cover object-top sm:block" />
+					<span class="flex flex-1 flex-col">
 						<span class="text-lg font-bold tracking-tight text-neutral-950 group-hover:underline">{{ p.name }}</span>
 						<span class="text-sm text-neutral-500">{{ p.description }}</span>
 					</span>

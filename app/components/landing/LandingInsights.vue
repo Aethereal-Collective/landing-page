@@ -1,6 +1,6 @@
 <template>
 	<section v-if="posts.length" id="insights" class="w-full scroll-mt-24 bg-neutral-50/60 px-4 py-24 md:py-32">
-		<LandingHeading eyebrow="Insights" title="Research, explained" accent="in plain language." subtitle="Our writing on crypto markets, tokenomics, and onchain business models, mostly in Bahasa Indonesia." />
+		<LandingHeading eyebrow="Insights" title="Research, explained" accent="in plain language." subtitle="Our writing on crypto markets, tokenomics, and onchain business models." />
 
 		<div class="mx-auto mt-16 grid max-w-6xl gap-6 sm:grid-cols-2 lg:grid-cols-3">
 			<a v-for="(post, i) in posts" :key="post.url" :href="post.url" target="_blank" rel="noopener noreferrer" class="group flex flex-col overflow-hidden rounded-3xl border border-neutral-200 bg-white transition-shadow hover:shadow-[0_20px_50px_rgba(0,0,0,0.08)]" data-aos="fade-up" :data-aos-delay="(i % 3) * 80">

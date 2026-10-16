@@ -15,7 +15,7 @@ export const FOCUS_AREAS = [
 	{
 		icon: "ph:brain-light",
 		name: "Artificial Intelligence",
-		description: "Practical AI products and learning paths, from prompting and tool use to agentic workflows built on modern models like Claude.",
+		description: "Practical AI products and learning paths, from prompting to agentic workflows.",
 		class: "md:col-span-2",
 	},
 	{
@@ -33,7 +33,7 @@ export const FOCUS_AREAS = [
 	{
 		icon: "ph:wallet-light",
 		name: "Fintech",
-		description: "Money apps that feel simple: payments, savings, and yield, designed for people who never want to think about gas or chains.",
+		description: "Money apps that feel simple: payments, savings, and yield.",
 		class: "md:col-span-2",
 	},
 ];
@@ -75,7 +75,7 @@ export const PROJECTS = [
 	{
 		name: "Nestora",
 		tag: "Savings",
-		description: "A DeFi savings app on Base. Create pockets, set goals, and earn yield with no DeFi knowledge needed.",
+		description: "A DeFi savings app on Base. Create pockets, set goals, and earn yield.",
 		url: "https://github.com/Fanreza/Nestora",
 	},
 	{
@@ -99,13 +99,13 @@ export const PROJECTS = [
 	{
 		name: "Fear & Greed Bot",
 		tag: "Market Data",
-		description: "A Discord bot that tracks the crypto Fear & Greed Index in real time for the community.",
+		description: "A Discord bot that tracks the crypto Fear & Greed Index in real time.",
 		url: "https://github.com/Fanreza/discord-bot-fear-and-greed-index",
 	},
 	{
 		name: "DAO Funding Tracker",
 		tag: "Tooling",
-		description: "A Discord bot that tracks wallet funding for DAOs so treasuries stay transparent.",
+		description: "A Discord bot that tracks wallet funding for DAOs.",
 		url: "https://github.com/Fanreza/discord-bot-wallet-funding",
 	},
 ];
@@ -126,9 +126,9 @@ export const ECOSYSTEM = [
 ];
 
 export const PROCESS = [
-	{ step: "01", title: "Research", body: "We start from data: onchain activity, market structure, regulation, and what people actually struggle with." },
-	{ step: "02", title: "Build", body: "We ship small, useful products fast, then harden the ones people use. AI is a tool, not a buzzword." },
-	{ step: "03", title: "Share", body: "We publish what we learn, in Bahasa Indonesia and English, so the next builder starts further ahead." },
+	{ step: "01", title: "Research", body: "We start from data: onchain activity, market structure, and regulation." },
+	{ step: "02", title: "Build", body: "We ship small, useful products fast, then harden the ones people use." },
+	{ step: "03", title: "Share", body: "We publish what we learn, in Bahasa Indonesia and English." },
 ];
 
 export const FAQ = [
@@ -138,11 +138,11 @@ export const FAQ = [
 	},
 	{
 		q: "What is Halt?",
-		a: "Halt is our free browser extension for Chrome and Brave, coming soon to the Chrome Web Store. It blocks crypto phishing sites and holds back dangerous wallet requests, with clear warnings in Bahasa Indonesia and English. Every check runs on your device.",
+		a: "Halt is our free browser extension for Chrome and Brave. It blocks crypto phishing sites and holds back dangerous wallet requests.",
 	},
 	{
 		q: "Do you give investment advice?",
-		a: "No. Our articles and tools are for education and research only. Always do your own research before making any financial decision.",
+		a: "No. Our articles and tools are for education and research only.",
 	},
 	{
 		q: "How can I join the community?",
@@ -159,7 +159,7 @@ export const PARTNERS = [
 	{
 		name: "EVM Shaker",
 		tagline: "Liquidity. In your hands.",
-		description: "A multichain liquidity workspace: a clearer view of your positions, value over time, and unclaimed fees, with more control over your next move.",
+		description: "A multichain liquidity workspace for tracking positions, value over time, and unclaimed fees.",
 		chains: ["Ethereum", "Base", "BNB Chain", "Robinhood", "Arc"],
 		image: "/image/partners/evmshaker.webp",
 		url: "https://app.evmshaker.io/app",

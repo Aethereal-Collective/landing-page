@@ -1,6 +1,6 @@
 <template>
 	<section id="focus" class="w-full scroll-mt-24 bg-neutral-50/60 px-4 py-24 md:py-32">
-		<LandingHeading eyebrow="What we do" title="Four disciplines," accent="one direction." subtitle="We combine AI, data science, blockchain, and fintech to build products that make onchain money easier to understand and safer to use." />
+		<LandingHeading eyebrow="What we do" title="Four disciplines," accent="one direction." subtitle="Products that make onchain money simpler and safer." />
 
 		<InspiraBentoGrid class="mt-16 max-w-6xl">
 			<InspiraBentoGridCard v-for="area in areas" :key="area.name" v-bind="area" cta="See our projects" href="/#projects" data-aos="fade-up">

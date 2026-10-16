@@ -1,6 +1,6 @@
 <template>
 	<section id="projects" class="w-full scroll-mt-24 bg-neutral-50/60 px-4 py-24 md:py-32">
-		<LandingHeading eyebrow="Projects" title="Things we've built," accent="in the open." subtitle="From payments and DeFi savings to verifiable AI datasets. Every project is open source, so you can read the code." />
+		<LandingHeading eyebrow="Projects" title="Things we've built," accent="in the open." subtitle="From payments and DeFi savings to verifiable AI datasets." />
 
 		<div class="mx-auto mt-16 grid max-w-6xl gap-5 sm:grid-cols-2 lg:grid-cols-4">
 			<a v-for="(p, i) in PROJECTS" :key="p.name" :href="p.url" target="_blank" rel="noopener noreferrer" class="block" data-aos="fade-up" :data-aos-delay="(i % 4) * 80">

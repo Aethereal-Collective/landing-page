@@ -15,7 +15,6 @@
 					</dd>
 				</div>
 			</dl>
-			<p class="mt-4 text-center text-xs text-neutral-400">Community count is live from Discord.</p>
 		</div>
 	</section>
 </template>

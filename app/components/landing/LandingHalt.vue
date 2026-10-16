@@ -1,6 +1,6 @@
 <template>
 	<section id="halt" class="w-full scroll-mt-24 bg-white px-4 py-24 md:py-32">
-		<LandingHeading eyebrow="Our product · Coming soon to the Chrome Web Store" title="Halt." accent="Scams, stopped." subtitle="A browser extension that blocks crypto phishing sites and holds back dangerous wallet transactions, with clear warnings in Bahasa Indonesia and English. Runs on your device." />
+		<LandingHeading eyebrow="Our product · Coming soon to the Chrome Web Store" title="Halt." accent="Scams, stopped." subtitle="A browser extension that blocks crypto phishing sites and holds back dangerous wallet transactions." />
 
 		<a :href="LINKS.halt" target="_blank" rel="noopener noreferrer" class="group relative mx-auto mt-16 block max-w-6xl overflow-hidden rounded-[2rem] border border-neutral-200 bg-neutral-950 p-4 text-white md:p-8" data-aos="fade-up">
 			<InspiraBorderBeam :size="320" :duration="9000" color-from="#ffffff" color-to="#737373" />
@@ -11,7 +11,7 @@
 						One extension to keep your crypto safe, <span class="chrome-text-dark">before you sign.</span>
 					</p>
 					<p class="text-neutral-400">
-						Halt checks every site you open and every risky wallet request, then explains what is going on in plain words, before your assets change hands.
+						Halt checks every site you open and every risky wallet request, then tells you the risk in plain words.
 					</p>
 					<dl class="grid grid-cols-2 gap-4">
 						<div class="rounded-2xl border border-white/10 p-4">

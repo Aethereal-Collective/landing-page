@@ -39,7 +39,7 @@ const columns = [
 			{ label: "Halt", to: "/#halt" },
 			{ label: "Projects", to: "/#projects" },
 			{ label: "Partners", to: "/#partners" },
-			{ label: "Insights", to: "/#insights" },
+			{ label: "Research", to: "/research" },
 		],
 	},
 	{

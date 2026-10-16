@@ -22,7 +22,22 @@ export default defineNuxtConfig({
 		"@nuxt/image",
 		"@nuxtjs/sitemap",
 		"@nuxtjs/robots",
+		"@nuxt/content",
+		"nuxt-studio",
 	],
+
+	// Visual editor at /_studio. Builds run in Docker on our server (no CI vars), so the repo is set here.
+	studio: {
+		repository: { provider: "github", owner: "Aethereal-Collective", repo: "landing-page", branch: "main" },
+		git: { commit: { messagePrefix: "content:" } },
+		// Empty placeholders so NUXT_STUDIO_AUTH_GITHUB_* in the server .env override them at runtime (the Docker build has no secrets).
+		auth: { github: { clientId: "", clientSecret: "" } },
+	},
+
+	content: {
+		experimental: { sqliteConnector: "native" }, // node:sqlite, no native build on Alpine
+		build: { markdown: { toc: { depth: 3 } } },
+	},
 	aos: { once: true, duration: 700, offset: 60 },
 
 	css: ["~/assets/css/tailwind.css"],

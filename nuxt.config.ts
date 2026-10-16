@@ -30,7 +30,7 @@ export default defineNuxtConfig({
 	studio: {
 		repository: { provider: "github", owner: "Aethereal-Collective", repo: "landing-page", branch: "main" },
 		git: { commit: { messagePrefix: "content:" } },
-		// Empty placeholders so NUXT_STUDIO_AUTH_GITHUB_* in the server .env override them at runtime (the Docker build has no secrets).
+		// Secrets come from STUDIO_GITHUB_* env vars at runtime (see .env.example); the Docker build has none.
 		auth: { github: { clientId: "", clientSecret: "" } },
 	},
 

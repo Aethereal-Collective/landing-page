@@ -6,7 +6,7 @@
 			<LandingEcosystem />
 			<LandingStats />
 			<LandingFocus />
-			<LandingShield />
+			<LandingHalt />
 			<LandingProjects />
 			<LandingPartners />
 			<LandingInsights />

@@ -7,6 +7,7 @@ export const LINKS = {
 	github: "https://github.com/Aethereal-Collective",
 	medium: "https://medium.com/@aethereal_co",
 	email: "mailto:team@aethereal.top",
+	halt: "https://halt.aethereal.top/en",
 	brandAssets: "https://www.dropbox.com/scl/fo/uvr9qn3ki94wm99zh012j/AEOCG77wwtESqiQHU5rr8LE?rlkey=itwrpsogfbvbovwci4xalvz8g&st=3hbkq67j&dl=0",
 };
 
@@ -37,11 +38,25 @@ export const FOCUS_AREAS = [
 	},
 ];
 
-export const SHIELD_FEATURES = [
-	{ icon: "ph:globe-x-light", title: "Domain Shield", body: "Blocks known and lookalike phishing domains, like indodaz.com pretending to be indodax.com, before you can interact." },
-	{ icon: "ph:hand-palm-light", title: "Transaction Guard", body: "Pauses unlimited approvals, approval-for-all, Permit signatures, and zero-value NFT listings, the tricks drainers use." },
-	{ icon: "ph:seal-check-light", title: "Cek Legalitas OJK", body: "Shows whether a trading platform is on the OJK whitelist, so you check before you deposit." },
-	{ icon: "ph:lock-key-light", title: "Private by Design", body: "Every check runs on your device. Your browsing history never leaves your browser." },
+export const HALT_FEATURES = [
+	{
+		icon: "ph:globe-x-light",
+		title: "Domain Shield",
+		body: "Fake exchange and dApp sites are blocked with a full-page warning.",
+		points: ["160K+ known phishing sites", "Lookalike name detection", "Homoglyphs & punycode", "On-device detection model"],
+	},
+	{
+		icon: "ph:hand-palm-light",
+		title: "Transaction Guard",
+		body: "Requests drainers rely on are held until you decide.",
+		points: ["Unlimited token approvals", "Approval for all NFTs", "Permit & Permit2", "eth_sign"],
+	},
+	{
+		icon: "ph:lock-key-light",
+		title: "Fully Private",
+		body: "Every check runs on your device. Nothing is sent anywhere.",
+		points: ["No server", "No account", "No tracking", "Works offline"],
+	},
 ];
 
 export const PROJECTS = [
@@ -122,8 +137,8 @@ export const FAQ = [
 		a: "Aethereal (æthereal) is a technology organization based in Indonesia, founded in 2023. We build products and publish research across AI, data science, blockchain, and fintech.",
 	},
 	{
-		q: "What is Aethereal Shield?",
-		a: "A free browser extension, currently in development, that protects Indonesian crypto users from phishing sites and wallet drainers, with every warning explained in Bahasa Indonesia.",
+		q: "What is Halt?",
+		a: "Halt is our free browser extension for Chrome and Brave, coming soon to the Chrome Web Store. It blocks crypto phishing sites and holds back dangerous wallet requests, with clear warnings in Bahasa Indonesia and English. Every check runs on your device.",
 	},
 	{
 		q: "Do you give investment advice?",
